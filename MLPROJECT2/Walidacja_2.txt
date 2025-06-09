@@ -1,0 +1,11 @@
+1.
+W pipeline'ie są kolumny wykorzystywane wielokrotnie – np. installment, loan_amount, annual_income, loan_status trafiają do więcej 
+niż jednego transformera, a później też jako cechy.
+2.
+Niektóre oryginalne kolumny nie zostały usunięte mimo że mają przekształcone wersje – np. installment_sqrt jest generowany, ale 
+installment nadal leci w basic_numeric_cols.
+3.
+Brakuje jednego przykładowego testu działania pipeline'u na końcu (05_Testing.ipynb) – przydałby się chociaż fit_transform i 
+print(df_transformed.shape) żeby mieć pewność, że wszystko działa.
+4.
+Można pokazać jakie cechy trafiają do modelu – żeby było jasne, co finalnie model „widzi”.
