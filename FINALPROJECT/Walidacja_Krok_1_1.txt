@@ -1,0 +1,12 @@
+1.
+Dwie kolumny (issue_year i last_payment_year) są bezużyteczne, bo mają jedną wartość we wszystkich wierszach więc do usunięcia.
+2.
+W danych występuje kilka par cech, które są bardzo silnie skorelowane np:
+-total_payment i total_payment_sqrt (0.97)
+-installment i installment_sqrt (0.98)
+-grade_numeric i sub_grade_numeric (0.98)
+-sub_grade_numeric i int_rate (0.96)
+-total_acc i total_acc_sqrt (0.99)
+i oczywiście że będą ze sobą skorelowane ale warto zostawić jedną z nich żeby model nie był zdominowany przez te kolumny.
+3.
+dobrze chłopaki robią, ale słyszałem, że komentarze są całkiem spoko <3
